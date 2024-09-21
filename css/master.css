@@ -275,7 +275,10 @@ body {
         padding: 10px 20%;
     }
 
-    .social-icons{
-      justify-content: center;
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
     }
 }
