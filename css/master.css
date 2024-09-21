@@ -274,4 +274,8 @@ body {
     .btn {
         padding: 10px 20%;
     }
+
+    .social-icons{
+      justify-content: center;
+    }
 }
