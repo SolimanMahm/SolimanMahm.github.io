@@ -17,6 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #000;
     padding-left: 200px;
     padding-right: 200px;
@@ -206,6 +207,79 @@ body {
     background-color: #0096c7;
 }
 
+
+#container {
+   width: 100%;
+}
+
+#container h2 {
+    font-size: 24px;;
+    margin-bottom: 30px;
+
+}
+
+.technology {
+   margin-bottom: 20px;
+   max-width: 100%
+}
+
+.technology h3 {
+   display: flex;
+   justify-content: space-between;
+   font-size: 16px;
+   margin-bottom: 5px;
+}
+
+.technology h3 i {
+            margin-right: 10px;
+        }
+
+.title i{
+  font-size: 30px;
+}
+
+.technology h3 span{
+  color: #9ca3af;
+}
+
+.progress {
+   /* background-color: #333; */
+   border-radius: 10px;
+   height: 10px;
+   overflow: hidden;
+}
+
+.progress-bar {
+   background-color: #00bfff;
+   height: 100%;
+   border-radius: 10px;
+}
+
+/* Specific progress values for each technology */
+.html .progress-bar {
+    width: 85%;
+}
+
+.css .progress-bar {
+    width: 85%;
+}
+
+.bootstrap .progress-bar {
+    width: 85%;
+}
+
+.tailwind .progress-bar {
+    width: 75%;
+}
+
+.javascript .progress-bar {
+    width: 80%;
+}
+
+.typescript .progress-bar {
+    width: 70%;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
 
@@ -281,4 +355,13 @@ body {
         gap: 20px;
         margin-top: 20px;
     }
+
+    #container {
+      width: 100%;
+      justify-content: flex-start;
+     }
+
+     #container h2 {
+        text-align: left;
+     }
 }
