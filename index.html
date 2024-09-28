@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "Y-pDCFzs-bjDFkz9M",
+          });
+       })();
+     </script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
-
 </head>
 <body>
 
@@ -16,7 +25,7 @@
         <ul>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#container">Technologies</a></li>
-            <li><a href="#">Connect Me</a></li>
+            <li><a href="#conatctMe">Connect Me</a></li>
         </ul>
     </div>
 
@@ -102,53 +111,95 @@
         <section id="container">
             <h2>Technologies</h2>
 
-            <div class="technology html">
-                <h3>Java<span>85%</span></h3>
+            <div class="technology t1">
+                <h3>Android Studio<span>63%</span></h3>
                 <div class="progress">
                     <div class="progress-bar"></div>
                 </div>
             </div>
 
-            <div class="technology css">
-                <h3>C++ <span>85%</span></h3>
+            <div class="technology t2">
+                <h3>Java<span>75%</span></h3>
                 <div class="progress">
                     <div class="progress-bar"></div>
                 </div>
             </div>
 
-            <div class="technology bootstrap">
-                <h3>Python <span>85%</span></h3>
+            <div class="technology t3">
+                <h3>Components lifecycle<span>60%</span></h3>
                 <div class="progress">
                     <div class="progress-bar"></div>
                 </div>
             </div>
 
-            <div class="technology tailwind">
-                <h3>OOP <span>75%</span></h3>
+            <div class="technology t4">
+                <h3>Gradel<span>60%</span></h3>
                 <div class="progress">
                     <div class="progress-bar"></div>
                 </div>
             </div>
 
-            <div class="technology javascript">
-                <h3>Data Structures <span>80%</span></h3>
+            <div class="technology t5">
+                <h3>Material Design Principles<span>50%</span></h3>
                 <div class="progress">
                     <div class="progress-bar"></div>
                 </div>
             </div>
 
-            <div class="technology typescript">
-                <h3>Algorithms <span>70%</span></h3>
+            <div class="technology t6">
+                <h3>XML layouts<span>58%</span></h3>
                 <div class="progress">
                     <div class="progress-bar"></div>
                 </div>
             </div>
+
+            <div class="technology t7">
+                <h3>Assets management<span>56%</span></h3>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="technology t8">
+                <h3>Intent<span>53%</span></h3>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="technology t9">
+                <h3>Networking<span>52%</span></h3>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="technology t10">
+                <h3>Version control<span>75%</span></h3>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+        <section id="conatctMe">
+          <h2>Send Email</h2>
+          <form id="emailForm">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+              <textarea id="message" name="message" rows="4" placeholder="Write message..." required></textarea>
+
+              <button class="btn" type="submit">Send Message</button>
+          </form>
+    </section>
+    <script src="js/script.js"></script>
   </div>
-
-    </div>
-
-
-
 
 </body>
 </html>
