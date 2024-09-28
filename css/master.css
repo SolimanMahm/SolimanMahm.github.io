@@ -356,6 +356,34 @@ body {
     /* cursor: pointer; */
 }
 
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.fab:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb); /* Change gradient on hover */
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid white; /* Arrow color */
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
 
@@ -442,5 +470,9 @@ body {
 
      #container h2 {
         text-align: left;
+     }
+
+     #conatctMe form{
+       width: 100%;
      }
 }

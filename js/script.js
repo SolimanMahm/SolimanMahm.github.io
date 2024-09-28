@@ -22,3 +22,26 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
         alert("Failed to send email. Please try again.");
     });
 });
+
+
+const fab = document.getElementById('fab');
+
+// Hide the FAB initially
+fab.style.display = 'none';
+
+// Show or hide the FAB based on scroll position
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 600) { // Adjust the value as needed
+        fab.style.display = 'flex'; // Show the FAB
+    } else {
+        fab.style.display = 'none'; // Hide the FAB
+    }
+});
+
+// Scroll to top functionality
+fab.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling to the top
+    });
+});
