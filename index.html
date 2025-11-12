@@ -1,268 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-      </script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init({
-            publicKey: "Y-pDCFzs-bjDFkz9M",
-          });
-       })();
-     </script>
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css">
-</head>
-<body>
-
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="logo">Soliman mahmoud Portfolio</div>
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#container">Technologies</a></li>
-            <li><a href="#conatctMe">Connect Me</a></li>
-        </ul>
-    </div>
-
-    <!-- Main Section -->
-    <div class="main">
-        <!-- Introduction -->
-        <div class="intro">
-            <h1>Hello, I'm Soliman Mahmoud Soliman</h1>
-            <h2>Android Developer</h2>
-            <p>I am an Android Developer with a focus on Java and a recent graduate from BFCAI, holding a degree in Computer Science. My technical skills include advanced proficiency in Android SDK, Java programming, and Material Design libraries, allowing me to build intuitive and visually stunning applications. I am known for my exceptional time management abilities and thrive in collaborative team settings. With a deep passion for creating responsive and user-friendly applications, I am skilled at solving complex problems and delivering high-quality results with efficiency.</p>
-            <a href="assets\cv.pdf" class="download-btn">Download resume</a>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/soliman-mahmoud-2a844125b/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/SolimanMahm"><i class="fa fa-github"></i></a>
-            </div>
-        </div>
-
-        <!-- Profile Picture -->
-        <img src="assets/myPhoto.jpg" alt="Profile Picture" class="profile-pic">
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-container">
-
-                <div class="project">
-                <div class="project-image">
-                    <img src="assets/Stopwatch.png" alt="E-commerce Project">
-                </div>
-                <div class="project-description">
-                    <h3>Stopwatch App</h3>
-                    <p><i>A basic stopwatch app that displays minutes, seconds, and milliseconds and allows users to start, pause, and reset the timer.</i></p>
-                    <ul>
-                        <li>Stopwatch app same UI in Stopwatch Xiaomi.</li>
-                        <li>Utilize a Runnable to execute logic on a background (worker) thread, and use a Handler to schedule and repeat its execution at regular intervals..</li>
-                        <li>Implemented subtle UI animations to improve user interaction and provide a modern, responsive feel to the application.</li>
-                    </ul>
-                    <div class="buttons">
-                        <!-- <a href="live-preview-link" class="btn">Live preview</a> -->
-                        <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/Stopwatch" class="btn">Checkout github</a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-image">
-                    <img src="assets/ToDoApp.png" alt="E-commerce Project">
-                </div>
-                <div class="project-description">
-                    <h3>ToDo App</h3>
-                    <p><i>Using a To-Do app can offer various advantages that enhance productivity and personal organization.</i></p>
-                    <ul>
-                        <li>Helps in organizing tasks, setting priorities, and categorizing them by urgency or type, making it easier to manage daily responsibilities.</li>
-                        <li>Helps in planning and allocating time for each task, leading to better management of time and a more balanced schedule.</li>
-                        <li>The App allows for customization, such as setting deadlines, reminders, and alarms, to cater to individual needs and preferences.</li>
-                    </ul>
-                    <div class="buttons">
-                        <!-- <a href="live-preview-link" class="btn">Live preview</a> -->
-                        <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/ToDoApp" class="btn">Checkout github</a>
-                    </div>
-                </div>
-              </div>
-
-                <div class="project">
-                  <div class="project-image">
-                      <img src="assets/ChatApp.png" alt="E-commerce Project">
-                  </div>
-                  <div class="project-description">
-                      <h3>Chat App</h3>
-                      <p><i>The app is a communication platform that allows seamless communication with registered friends.</i></p>
-                      <ul>
-                          <li>Users can easily create an account using an email and password, taking into account security restrictions to protect data.</li>
-                          <li>The app allows instant chatting with others registered in the system, ensuring that messages are delivered in real-time without any delay.</li>
-                          <li>The chat app is designed to provide a seamless and easy-to-use communication experience with your friends anytime, anywhere.</li>
-                      </ul>
-                      <div class="buttons">
-                          <!-- <a href="live-preview-link" class="btn">Live preview</a> -->
-                          <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/ChatApp" class="btn">Checkout github</a>
-                      </div>
-                  </div>
-              </div>
-
-                <div class="project">
-                    <div class="project-image">
-                        <img src="assets/WeatherApp.png" alt="E-commerce Project">
-                    </div>
-                    <div class="project-description">
-                        <h3>Weather App</h3>
-                        <p><i>Weather app that can know the weather by city name</i></p>
-                        <ul>
-                            <li>This weather app allows users to easily check the current weather conditions by simply entering a city name.</li>
-                            <li>It provides essential information such as the minimum and maximum temperatures for the day, along with the overall weather condition (e.g., sunny, cloudy, or rainy).</li>
-                            <li>With a user-friendly interface, dynamic visuals that adjust based on weather conditions, and smooth navigation, this app offers a comprehensive and visually engaging way to stay informed about the weather.</li>
-                        </ul>
-                        <div class="buttons">
-                            <!-- <a href="live-preview-link" class="btn">Live preview</a> -->
-                            <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/WeatherApp" class="btn">Checkout github</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-image">
-                        <img src="assets/NewsApp.png" alt="Exam Gate Project">
-                    </div>
-                    <div class="project-description">
-                        <h3>News Cloud</h3>
-                        <p><i>Discover important news tailored to your interests. Select from various category types to stay informed.</i></p>
-                        <ul>
-                            <li>Material Design UI and RecyclerView.</li>
-                            <li>Retrofit library for fetching data from NewsAPI.</li>
-                            <li>Glide library for displaying images from the API.</li>
-                        </ul>
-                        <div class="buttons">
-                            <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/NewsApp" class="btn">Checkout github</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-image">
-                        <img src="assets/Calculator.png" alt="Exam Gate Project">
-                    </div>
-                    <div class="project-description">
-                        <h3>Calculator</h3>
-                        <p><i>Calculator app that can perform basic arithmetic operations.</i></p>
-                        <ul>
-                            <li>Calculator app same UI in Calculator Xiaomi.</li>
-                            <li>It can be used in dark mode or light mode.</li>
-                            <li>Perform basic arithmetic operations.</li>
-                            <li>I have relied upon the Postfix expressions to perform arithmetic operations correctly. They take into account the order of priorities of mathematical operations.</li>
-                        </ul>
-                        <div class="buttons">
-                            <a href="https://github.com/SolimanMahm/RODIGY_AD_01" class="btn">Checkout github</a>
-                        </div>
-                    </div>
-                </div>
-
-              </div>
-        </section>
-
-        <section id="container">
-            <h2>Technologies</h2>
-
-            <div class="technology t1">
-                <h3>Android Studio<span>63%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t2">
-                <h3>Java<span>75%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t3">
-                <h3>Components lifecycle<span>60%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t4">
-                <h3>Gradel<span>60%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t5">
-                <h3>Material Design Principles<span>50%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t6">
-                <h3>XML layouts<span>58%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t7">
-                <h3>Assets management<span>56%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t8">
-                <h3>Intent<span>53%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t9">
-                <h3>Networking<span>52%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-            <div class="technology t10">
-                <h3>Version control<span>75%</span></h3>
-                <div class="progress">
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-
-        <section id="conatctMe">
-          <h2>Send Email</h2>
-          <form id="emailForm">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Enter email" required>
-
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="Enter name" required>
-
-              <label for="subject">Subject:</label>
-              <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
-
-              <textarea id="message" name="message" rows="4" placeholder="Write message..." required></textarea>
-
-              <button class="btn" type="submit">Send Message</button>
-          </form>
-        </section>
-
-        <div class="fab" id="fab">
-            <div class="arrow-up"></div>
-        </div>
-
+    <title>Soliman Mahmoud Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/script.js"></script>
-  </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/master.css"/>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo"/>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-label">👋 Welcome to my portfolio</div>
+            <h1>Hi, I'm <span class="gradient-text">Soliman Mahmoud</span><br>Android Developer</h1>
+            <p>Junior Android Developer passionate about creating innovative mobile applications that solve real problems. Specialized in Java, Kotlin, and modern Android development.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="assets/cv.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/solimanmahmoud/">in</a>
+                <a href="https://github.com/SolimanMahm"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/201028721772">W</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/myPhoto.jpg" alt="Soliman Mahmoud">
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-title">
+            <span>MY WORK</span>
+            <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-wrapper">
+            <div class="project">
+                <img src="assets/ChatApp.png" alt="Chat App" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Chat App</h3>
+                    <p class="project-desc">Secure messaging platform with Firebase Authentication and real-time updates</p>
+                    <div class="project-tags">
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Auth</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/ChatApp" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/ToDoApp.png" alt="ToDo App" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">ToDo App</h3>
+                    <p class="project-desc">Task manager with SQLite, custom DatePicker, and foreground services</p>
+                    <div class="project-tags">
+                        <span class="tag">Handler</span>
+                        <span class="tag">ViewPager</span>
+                        <span class="tag">SharedPreferences</span>
+                        <span class="tag">Fragment</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Notifications</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/ToDoApp" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/NewsApp.png" alt="News" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">News Cloud</h3>
+                    <p class="project-desc">News aggregator with Material Design</p>
+                    <div class="project-tags">
+                        <span class="tag">Material Design</span>
+                        <span class="tag">Retrofit</span>
+                        <span class="tag">Glide</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/NewsApp" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/Stopwatch.png" alt="Stopwatch" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Stopwatch</h3>
+                    <p class="project-desc">Precision timer with threading</p>
+                    <div class="project-tags">
+                        <span class="tag">Threading</span>
+                        <span class="tag">Animations</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/Stopwatch" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-more">
+            <button class="btn btn-outline" onclick="showAll()">View All Projects</button>
+        </div>
+    </section>
+
+    <section id="all-projects" style="display: none;">
+        <div class="section-title">
+            <span>ALL WORK</span>
+            <h2>All Projects</h2>
+        </div>
+
+        <div class="projects-wrapper">
+            <div class="project">
+                <img src="assets/ChatApp.png" alt="Chat App" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Chat App</h3>
+                    <p class="project-desc">Secure messaging platform with Firebase Authentication and real-time updates</p>
+                    <div class="project-tags">
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Auth</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/ChatApp" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/WeatherApp.png" alt="Weather" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-desc">Weather forecast with Retrofit API</p>
+                    <div class="project-tags">
+                        <span class="tag">Retrofit</span>
+                        <span class="tag">UX</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/WeatherApp" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/NewsApp.png" alt="News" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">News Cloud</h3>
+                    <p class="project-desc">News aggregator with Material Design</p>
+                    <div class="project-tags">
+                        <span class="tag">Material Design</span>
+                        <span class="tag">Retrofit</span>
+                        <span class="tag">Glide</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/NewsApp" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/ToDoApp.png" alt="ToDo App" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">ToDo App</h3>
+                    <p class="project-desc">Task manager with SQLite, custom DatePicker, and foreground services</p>
+                    <div class="project-tags">
+                        <span class="tag">Handler</span>
+                        <span class="tag">ViewPager</span>
+                        <span class="tag">SharedPreferences</span>
+                        <span class="tag">Fragment</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Notifications</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/ToDoApp" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/Stopwatch.png" alt="Stopwatch" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Stopwatch</h3>
+                    <p class="project-desc">Precision timer with threading</p>
+                    <div class="project-tags">
+                        <span class="tag">Threading</span>
+                        <span class="tag">Animations</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/Stopwatch" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/TicTacToe.png" alt="TicTacToe" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">TicTacToe</h3>
+                    <p class="project-desc">Two-player strategy game</p>
+                    <div class="project-tags">
+                        <span class="tag">Game</span>
+                        <span class="tag">Regex pattern</span>
+                        <span class="tag">Dialog</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-more">
+            <button class="btn btn-outline" onclick="hideAll()">Show Less</button>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-title">
+            <span>CAREER</span>
+            <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Backend Django Developer</h3>
+                    <div class="timeline-company">Military Service</div>
+                    <div class="timeline-date">Mar 2025 - Present</div>
+                    <p class="timeline-desc">Developed web-based systems for equipment management and fleet tracking with asset registration, report generation, and operational efficiency improvements.</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div style="flex: 1;"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div style="flex: 1;"></div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Operations Specialist</h3>
+                    <div class="timeline-company">RoadRunner</div>
+                    <div class="timeline-date">Oct 2024 - Dec 2024</div>
+                    <p class="timeline-desc">Liaison between delivery teams and technical support, ensuring accurate order preparation and professional customer service.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Android Developer</h3>
+                    <div class="timeline-company">Freelancer</div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <p class="timeline-desc">Developing mobile applications using Java and XML with focus on Material Design and modern development practices.</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div style="flex: 1;"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div style="flex: 1;"></div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Bachelor of Computer Science</h3>
+                    <div class="timeline-company">Benha University - BFCAI</div>
+                    <div class="timeline-date">2020 - 2024</div>
+                    <p class="timeline-desc">Graduated with Very Good grade (3.60 GPA). Excellent graduation project. Specialized in Computer Science and AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-title">
+            <span>EXPERTISE</span>
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+                <div class="skill-name">Java</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-c"></i></div>
+                <div class="skill-name">C</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                <div class="skill-name">Python</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-android"></i></div>
+                <div class="skill-name">Kotlin</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="skill-name">C++</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+                <div class="skill-name">OOP</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-android"></i></div>
+                <div class="skill-name">Android</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="skill-name">Storage</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                <div class="skill-name">HTML</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-code-branch"></i></div>
+                <div class="skill-name">Data Structures</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                <div class="skill-name">Django</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-fire"></i></div>
+                <div class="skill-name">Firebase</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="skill-name">CSS</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                <div class="skill-name">Algorithms</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                <div class="skill-name">Git & GitHub</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-gear"></i></div>
+                <div class="skill-name">Services</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="skill-name">Problem Solving</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="skill-name">JSON & API</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-broom"></i></div>
+                <div class="skill-name">Clean Code</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-filter"></i></div>
+                <div class="skill-name">Data Cleaning</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">
+            <span>GET IN TOUCH</span>
+            <h2>Contact Me</h2>
+        </div>
+
+        <form id="emailForm" class="contact-form">
+            <div class="form-group">
+                <label class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p>📧 soliiimahmoud70@gmail.com</p>
+            <p>📱 +20 1028721772</p>
+            <p>📍 Kafr Shukr, Al Qalyubia, Egypt</p>
+        </div>
+    </section>
+
+    <div class="scroll-top" id="scrollTop"></div>
 
 </body>
-</html>

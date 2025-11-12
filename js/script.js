@@ -1,47 +1,59 @@
-document.getElementById('emailForm').addEventListener('submit', function(event) {
-    event.preventDefault();
 
-    // Get form values
-    const email = document.getElementById('email').value;
-    const name = document.getElementById('name').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-
-    // Send the email using EmailJS
-    emailjs.send("service_6r3npu9", "template_5matxdn", {
-        from_name: name,
-        message: message,
-        subject: subject,
-        from_email: email
-    })
-    .then(function(response) {
-        console.log("SUCCESS!", response.status, response.text);
-        alert("Email sent successfully!");
-    }, function(error) {
-        console.log("FAILED...", error);
-        alert("Failed to send email. Please try again.");
+(function () {
+    emailjs.init({
+        publicKey: "Y-pDCFzs-bjDFkz9M",
     });
+})();
+
+
+function showAll() {
+    document.getElementById('projects').style.display = 'none';
+    document.getElementById('all-projects').style.display = 'block';
+    document.getElementById('all-projects').scrollIntoView({ behavior: 'smooth' });
+}
+
+function hideAll() {
+    document.getElementById('all-projects').style.display = 'none';
+    document.getElementById('projects').style.display = 'block';
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+}
+
+document.getElementById('emailForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_u5iblhj', 'template_s0fcvgr', this)
+        .then(() => {
+            alert('✅ Message sent successfully!');
+            this.reset();
+        }, (error) => {
+            alert('❌ Failed to send. Please try again.');
+            console.error('Error:', error);
+        });
 });
 
+const scrollTop = document.getElementById('scrollTop');
 
-const fab = document.getElementById('fab');
-
-// Hide the FAB initially
-fab.style.display = 'none';
-
-// Show or hide the FAB based on scroll position
-window.addEventListener('scroll', function() {
-    if (window.scrollY > 600) { // Adjust the value as needed
-        fab.style.display = 'flex'; // Show the FAB
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollTop.classList.add('show');
     } else {
-        fab.style.display = 'none'; // Hide the FAB
+        scrollTop.classList.remove('show');
     }
 });
 
-// Scroll to top functionality
-fab.addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Smooth scrolling to the top
+scrollTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href && href !== '#') {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
     });
 });
