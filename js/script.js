@@ -21,7 +21,7 @@ function hideAll() {
 document.getElementById('emailForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_u5iblhj', 'template_s0fcvgr', this)
+    emailjs.sendForm('service_6r3npu9', 'template_s0fcvgr', this)
         .then(() => {
             alert('✅ Message sent successfully!');
             this.reset();
